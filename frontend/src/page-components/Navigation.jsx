@@ -3,16 +3,16 @@ import React from 'react'
 function Navigation
 () {
   return <>
-    <section className='w-screen h-[8vh] relative'>
-        <div className='w-11/12 h-[50%] bg-white absolute bottom-0 right-[50%] translate-x-[50%] flex'>
+    <section className='w-screen h-[8vh] fixed top-0 z-2' style={{backgroundColor: "rgb(105, 28, 28)"}}>
+        <div className='w-11/12 h-[50%] bg-amber-50 absolute bottom-1 right-[50%] translate-x-[50%] flex'>
             <div className='w-[40%] sm:w-[25%] h-full'>Logo Here</div>     
             <div className='w-[20%] sm:w-[50%] h-full relative'>
-                <button className='md:hidden w-fit h-fit absolute right-[50%] bottom-[50%] translate-x-[50%] translate-y-[50%]'>
+                <button className='lg:hidden w-fit h-fit absolute right-[50%] bottom-[50%] translate-x-[50%] translate-y-[50%]'>
                     <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.768555C0 0.354341 0.335786 0.0185547 0.75 0.0185547H17.25C17.6642 0.0185547 18 0.354341 18 0.768555C18 1.18277 17.6642 1.51855 17.25 1.51855H0.75C0.335786 1.51855 0 1.18277 0 0.768555ZM0 6.01855C0 5.60434 0.335786 5.26855 0.75 5.26855H17.25C17.6642 5.26855 18 5.60434 18 6.01855C18 6.43277 17.6642 6.76855 17.25 6.76855H0.75C0.335786 6.76855 0 6.43277 0 6.01855ZM0 11.2686C0 10.8543 0.335786 10.5186 0.75 10.5186H17.25C17.6642 10.5186 18 10.8543 18 11.2686C18 11.6828 17.6642 12.0186 17.25 12.0186H0.75C0.335786 12.0186 0 11.6828 0 11.2686Z" fill="#0F172A"/>
                     </svg>
                 </button>
-                <nav className='hidden md:flex w-full h-full  md:justify-around'>
+                <nav className='hidden lg:flex w-full h-full  md:justify-around'>
                     <button className='font-semibold'>SHOP</button>
                     <button className='font-semibold'>CATEGORY</button>
                     <button className='font-semibold'>BRANDS</button>
