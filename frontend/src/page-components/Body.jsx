@@ -18,7 +18,7 @@ function Body() {
       const newPositions = imageRefs.current.map((ref) => {
         if (ref) {
           const rect = ref.getBoundingClientRect();
-          return (rect.top * 0.1) - 50;
+          return (rect.top * 0.1) - 100;
         }
         return 0;
       });
@@ -52,12 +52,12 @@ function Body() {
         </div>
 
         {/* Dynamic photo section */}
-        <div className='w-11/12 h-fit bg-[#691c1c] mx-auto'>
+        <div className='w-12/12 h-fit bg-[#691c1c] mx-auto'>
           {photoArr.map((url, index) => (
             <div
               key={index}
               ref={(el) => imageRefs.current[index] = el}
-              className='w-full h-[60vh] lg:h-[75vh] border-5 border-[#691c1c] bg-cover box-border bg-no-repeat bg-center overflow-hidden transition-all ease-out duration-200'
+              className='w-full h-[20vh] sm:h-[40vh] lg:h-[75vh]  bg-cover box-border bg-no-repeat bg-center overflow-hidden transition-all ease-out duration-200'
               style={{
                 backgroundImage: `url(${url})`,
                 backgroundPosition: `center ${positions[index] || 0}px`
