@@ -14,6 +14,9 @@ html {
 body {
     background-color: rgb(105, 28, 28);
 }
+button {
+  cursor: pointer;
+}
 
 :root {
     --ff-body: "Heebo", sans-serif;
