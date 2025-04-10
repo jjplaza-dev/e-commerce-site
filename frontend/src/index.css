@@ -3,3 +3,39 @@
 * {
     overflow: hidden;
 }
+
+body {
+    background-color: rgb(105, 28, 28);
+}
+
+:root {
+    --fs-xl: clamp(3rem, 4vw, 6rem);
+    --fs-l: clamp(2rem, 3vw, 4rem);
+    --fs-m: clamp(1.5rem, 2vw, 3rem);
+    --fs-s: clamp(1.0rem, 1vw, 2.5rem);
+    --fs-xs: clamp(0.75rem, 0.5vw, 1.5rem);
+  
+    h1{
+        font-size: var(--fs-xl);
+        
+    }
+    h2{
+        font-size: var(--fs-l);
+        
+    }
+    h3{
+        font-size: var(--fs-m);
+        
+    }
+    h4{
+        font-size: var(--fs-s);
+        
+    }
+    h5{
+        font-size: var(--fs-xs);
+        
+    }
+    button:hover {
+        cursor: pointer;
+    }
+  }

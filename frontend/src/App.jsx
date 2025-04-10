@@ -1,9 +1,9 @@
-import Test from "./page-components/Test"
+import Navigation from './page-components/Navigation'
 
 function App() {
   return (
     <>
-      <Test />
+      <Navigation />
     </>
   )
 }
